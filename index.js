@@ -27,7 +27,7 @@
  * shortenLargeNumber(0.12345)
  * // returns 0.12345
  */
-const shortenLargeNumber(num = 0, digits = 1) {
+export const shortenLargeNumber = (num = 0, digits = 1) => {
   const units = ['k', 'M', 'G', 'T', 'P', 'E', 'Z', 'Y'];
   let decimal;
 
@@ -41,6 +41,3 @@ const shortenLargeNumber(num = 0, digits = 1) {
 
   return num;
 };
-
-export const sln = shortenLargeNumber
-export default shortenLargeNumber;
